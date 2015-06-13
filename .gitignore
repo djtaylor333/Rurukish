@@ -16,4 +16,6 @@
 !/log/.keep
 /tmp
 
+/.metadata/.log/*
 /.metadata/*
+/.metadata/.plugins/*
