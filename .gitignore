@@ -19,3 +19,6 @@
 /.metadata/.log/*
 /.metadata/*
 /.metadata/.plugins/*
+.metadata/
+/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
