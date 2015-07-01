@@ -9,9 +9,11 @@ build:
         code: bundle exec rspec
 deploy:
   steps:
-    - simonmenke/git-merge:
-        source: master
-        target: staging
+    - s3sync:
+        key-id: $KEY
+        key-secret: $SECRET
+        bucket-url: $BUCKET
+        source-dir: $SOURCE
 
 # This references the default Ruby container from
 # the Docker Hub.
