@@ -7,6 +7,11 @@ build:
     - script:
         name: rspec
         code: bundle exec rspec
+deploy:
+  steps:
+    - simonmenke/git-merge:
+        source: master
+        target: staging
 
 # This references the default Ruby container from
 # the Docker Hub.
