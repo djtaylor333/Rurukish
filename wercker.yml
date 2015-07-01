@@ -7,10 +7,9 @@ build:
     - script:
         name: rspec
         code: bundle exec rspec
-        
 deploy:
   steps:
-    - simonmenke/git-merge@0.0.3
+    - simonmenke/git-merge@0.0.3:
         source: master
         target: staging
 # This references the default Ruby container from
