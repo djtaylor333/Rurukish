@@ -1,12 +1,12 @@
-box: ruby
+box: wercker/ruby
 services:
-  - wercker/postgresql
+    - wercker/postgresql
 build:
   steps:
     - bundle-install
-        - script:
-            name: rspec
-            code: bundle exec rspec
+    - script:
+        name: rspec
+        code: bundle exec rspec
 
 # This references the default Ruby container from
 # the Docker Hub.
