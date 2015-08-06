@@ -1,0 +1,13 @@
+pairs:
+  dt: David Taylor
+  ri: Ruben Infante
+  rt: Rubie Tiburcio
+  se: Sheena Ellenburg
+
+email:
+  prefix: pair
+  domain: pivotallabs.com
+
+email_addresses:
+
+global: true
