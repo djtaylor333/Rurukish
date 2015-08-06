@@ -4,3 +4,9 @@ test:
   database: circle_ruby_test
   adapter: postgresql
 
+development:
+  adapter: postgresql
+  database: rurukish_development
+  pool: 5
+  username: rurukish
+  password: rurukish
