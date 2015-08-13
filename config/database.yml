@@ -3,6 +3,7 @@ production:
   database: dfg2pm2jft78e6
   username: rbhtspsnoabnuw
   host: ec2-204-236-226-63.compute-1.amazonaws.com
+  password: GybFFjtOkJ5f_nANIshXGNwQkK
 
 test:
   host: localhost
