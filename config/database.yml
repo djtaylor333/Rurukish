@@ -18,7 +18,7 @@ test:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: rurukish_simulator_test
+  database: rurukish_test
   pool: 5
   username: root
   password: password
