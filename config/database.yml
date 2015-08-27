@@ -1,9 +1,9 @@
 production:
   adapter: postgresql
-  database: dfg2pm2jft78e6
-  username: rbhtspsnoabnuw
-  host: ec2-204-236-226-63.compute-1.amazonaws.com
-  password: GybFFjtOkJ5f_nANIshXGNwQkK
+  database: d5blu6uea8653o 
+  username: gyfrmaivhugsxs
+  host: ec2-54-243-187-196.compute-1.amazonaws.com
+  password: zBJ8puEsJA2moJUJgt23KFNPp
 
 test:
   host: localhost
