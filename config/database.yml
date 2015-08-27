@@ -5,15 +5,20 @@ production:
   host: ec2-54-243-187-196.compute-1.amazonaws.com
   password: zBJ8puEsJA2moJUJgt23KFNPp
 
-test:
-  host: localhost
-  username: ubuntu
-  database: circle_ruby_test
-  adapter: postgresql
-
 development:
   adapter: postgresql
-  database: rurukish_development
+  encoding: utf8
+  reconnect: false
+  database: rurukish_simulator_development
   pool: 5
-  username: rurukish
-  password: rurukish
+  username: root
+  password: password
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: rurukish_simulator_test
+  pool: 5
+  username: root
+  password: password
