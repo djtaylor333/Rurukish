@@ -14,6 +14,7 @@ function initializeMap()
     zoom: 2,
     center: new google.maps.LatLng(0, 0)
   });
+  map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
   console.log("Initialize Map");
 }
 
