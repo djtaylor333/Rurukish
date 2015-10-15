@@ -19,5 +19,7 @@
     <label for="input-password-verify">Verify Password</label>
     <input type="password" class="form-control" id="input-password-verify" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+  
+  <%= link_to "Cancel", {controller: :welcome, action: :index}, class: "btn btn-default pull-left" %>
+  <%= link_to "Submit", {controller: :welcome, action: :index}, class: "btn btn-primary pull-right" %>
 </form>

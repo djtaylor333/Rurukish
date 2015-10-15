@@ -8,5 +8,6 @@
     <input type="password" class="form-control" id="input-password" placeholder="Password">
   </div>
 
-  <button type="submit" class="btn btn-default">Submit</button>
+  <%= link_to "Cancel", '/', class: "btn btn-default pull-left" %>
+  <%= link_to "Submit", {controller: :welcome, action: :index}, class: "btn btn-primary pull-right" %>
 </form>
