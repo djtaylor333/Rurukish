@@ -1,12 +1,8 @@
 Rails.application.routes.draw do
   root 'welcome#index'
   
-  resources :accounts do
-    member do
-      get :login
-      get :create
-    end
-  end
+      get 'accounts/login' => 'accounts#login'
+      get 'accounts/create'  => 'accounts#create'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
