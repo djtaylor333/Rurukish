@@ -18,14 +18,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Rurukish</a>
+      <%= link_to 'Rurukish', '/', class: 'navbar-brand' %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Map<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Events</a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -34,6 +33,7 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
+      <% if @signed_in %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DanceVenturer <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -44,6 +44,9 @@
             <li><a href="#">Sign out</a></li>
           </ul>
         </li>
+      <% else %>
+        <li><%= link_to 'Sign in', accounts_login_path %></li>
+      <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -53,5 +56,10 @@
     <%= yield %>
 
   </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Rurukish Established 2015</p>
+    </div>
+  </footer>
 </body>
 </html>
