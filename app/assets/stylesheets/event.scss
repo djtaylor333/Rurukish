@@ -1,0 +1,39 @@
+#event-list {
+  .event {
+    .event-title {
+
+    }
+
+    .event-description {
+      font-style: italic;
+    }
+
+    .event-date {
+      float: right;
+    }
+
+    .event-location {
+
+    }
+
+    .event-street {
+
+    }
+
+    .event-region {
+      .event-city {
+
+      }
+
+      .event-state {
+        &::after {
+          content: ",";
+        }
+      }
+
+      .event-postal-code {
+
+      }
+    }
+  }
+}

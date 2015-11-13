@@ -1,14 +1,19 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-  
-      get 'accounts/login' => 'accounts#login'
-      get 'accounts/create'  => 'accounts#create'
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users, :controllers => { registrations: 'registrations' }
+
+  root 'home#index'
+
+  get 'accounts/login' => 'accounts#login'
+  get 'accounts/create'  => 'accounts#create'
+
+  resources :events, only: [:index, :new, :create]
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  # root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

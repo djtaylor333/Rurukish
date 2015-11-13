@@ -1,0 +1,24 @@
+<h2>Events</h2>
+
+<%= link_to new_event_path, class: 'btn btn-default ' do %>
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add event
+<% end %>
+<div id="event-list" class="list-group">
+  <% @events.each do |event| %>
+    <div class="list-group-item event">
+      <div class="list-group-item-text event-date badge"><%= event.date.strftime(Rails.application.config.date_format) %></div>
+      <h4 class="list-group-item-heading event-title"><%= event.title %></h4>
+      <h5 class="list-group-item-heading event-description"><%= event.description %></h5>
+
+      <div class="list-group-item-text event-location"><%= event.location %></div>
+      <div class="list-group-item-text event-street"><%= event.street %></div>
+      <div class="list-group-item-text event-region">
+        <span class="event-city"><%= event.city %></span>
+        <span class="event-state"><%= event.state %></span>
+        <span class="event-postal-code"><%= event.postal_code %></span>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= paginate @events %>

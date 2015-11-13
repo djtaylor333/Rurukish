@@ -14,12 +14,36 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "event";
 
 html, body {
     margin: 0;
     padding: 0;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
 #map-canvas {
     height: 600px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+
+  .container {
+    margin: 20px;
+  }
 }
